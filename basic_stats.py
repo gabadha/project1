@@ -1,3 +1,9 @@
+# Author: Fardoza Sheikh-Nur
+# GitHub username: gabadha
+# Date: 9/23/2022
+# Description: This code calculates mean/median/mode stats of a list of give grades
+
+
 import statistics
 """ Importing the statistics module"""
 
@@ -14,11 +20,10 @@ class Student:
         return self._student_grade
 
 
-def basic_stats(student_list):
+def basic_stats():
     Student.get_grade = [95, 92, 98, 85]
     return statistics.mean(Student.get_grade), statistics.median(Student.get_grade), statistics.mode(Student.get_grade)
     # Returns a tuple containing mean, median and mode of all given grades
 
-print(basic_stats(student_list=statistics))
 
-
+print(basic_stats())
