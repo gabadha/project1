@@ -21,7 +21,7 @@ class Student:
 
 
 def basic_stats():
-    Student.get_grade = [95, 92, 98, 85]
+    Student.get_grade = (95, 92, 98, 85)
     return statistics.mean(Student.get_grade), statistics.median(Student.get_grade), statistics.mode(Student.get_grade)
     # Returns a tuple containing mean, median and mode of all given grades
 
